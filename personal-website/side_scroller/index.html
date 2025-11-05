@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <!-- Immediate meta refresh redirect -->
+  <meta http-equiv="refresh" content="0;url=/games/side_scroller/">
+  <!-- Canonical link to new location -->
+  <link rel="canonical" href="/games/side_scroller/">
+  <!-- JavaScript fallback for older browsers -->
+  <script>window.location.replace('/games/side_scroller/');</script>
+  <style>body{font-family:system-ui,Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;padding:2rem}</style>
+</head>
+<body>
+  <h1>Redirecting…</h1>
+  <p>If you are not redirected automatically, <a href="/games/side_scroller/">click here</a>.</p>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Side Scroller - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <div id="ui">
+      <div id="start-screen" class="overlay">
+        <h1>Side Scroller</h1>
+        <label>Player name <input id="player-name" maxlength="20" placeholder="Your name"></label>
+        <div class="controls">
+          <button id="start-btn">Start</button>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+            <option value="harder">Harder</option>
+          </select>
+          <button id="leaderboard-btn">Leaderboard</button>
+        </div>
+      </div>
+
+      <div id="pause-screen" class="overlay hidden">
+        <h2>Paused</h2>
+        <button id="resume-btn">Resume</button>
+      </div>
+
+      <div id="leaderboard-screen" class="overlay hidden">
+        <h2>Leaderboard</h2>
+        <div id="leaderboard-list">Loading...</div>
+        <button id="back-btn">Back</button>
+      </div>
+
+      <div id="hud">
+        <div id="score">Score: 0</div>
+        <div id="highscore">High: 0</div>
+        <button id="pause-btn">Pause</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js" defer></script>
+</body>
+</html>

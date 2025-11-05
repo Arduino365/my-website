@@ -1,0 +1,15 @@
+[
+	{
+		"title": "Example Project One",
+		"description": "A short description of project one. Explain what it does and what technologies you used.",
+		"link": "https://example.com/project-one",
+		"tags": ["php","html","css"]
+	},
+	{
+		"title": "Example Project Two",
+		"description": "Another short description — maybe a school project or a demo.",
+		"link": "",
+		"tags": ["javascript","demo"]
+	}
+]
+
